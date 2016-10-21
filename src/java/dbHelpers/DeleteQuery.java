@@ -14,29 +14,28 @@ import java.sql.SQLException;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import model.Pokemon;
 
 /**
  *
  * @author Amber Gerard
  */
-public class AddQuery {
+public class DeleteQuery {
     
     private Connection conn;
     
-    public AddQuery(){
+    public DeleteQuery(){
     
      Properties props = new Properties();
-     InputStream instr = getClass().getResourceAsStream("dbConn.properties");
+    InputStream instr = getClass().getResourceAsStream("dbConn.properties");
         try {
             props.load(instr);
         } catch (IOException ex) {
-            Logger.getLogger(AddQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DeleteQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             instr.close();
         } catch (IOException ex) {
-            Logger.getLogger(AddQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DeleteQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
     
     String driver = props.getProperty("driver.name");
@@ -46,34 +45,28 @@ public class AddQuery {
         try {
             Class.forName(driver);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(AddQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DeleteQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             conn = DriverManager.getConnection(url, username, passwd);
         } catch (SQLException ex) {
-            Logger.getLogger(AddQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DeleteQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
- 
-    
     }
     
-    public void doAdd (Pokemon pokemon){
+    public void doDelete(int PokemonID){
     
         try {
-            String query = "INSERT INTO StrongPokemon (PokemonName, Type, Location, StrengthRating) Values (?, ?, ?, ?)";
+            String query = "DELETE FROM StrongPokemon WHERE PokemonID = ?";
             
             PreparedStatement ps = conn.prepareStatement(query);
             
-            ps.setString(1, pokemon.getPokemonName());
-            ps.setString(2, pokemon.getType());
-            ps.setString(3, pokemon.getLocation());
-            ps.setInt(4, pokemon.getStrengthRating());
+            ps.setInt(1, PokemonID);
             
             ps.executeUpdate();
-            
         } catch (SQLException ex) {
-            Logger.getLogger(AddQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DeleteQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
     
+    }
 }
