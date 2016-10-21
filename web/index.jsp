@@ -1,17 +1,14 @@
-<%-- 
-    Document   : index
-    Created on : Oct 21, 2016, 11:22:49 AM
-    Author     : Amber Gerard
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>My Pokemon</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>My Pokemon Database</h1>
+        
+        <a href="read">/View All Pokemon</a>
     </body>
 </html>
