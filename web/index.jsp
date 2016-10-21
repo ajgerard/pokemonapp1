@@ -9,6 +9,6 @@
     <body>
         <h1>My Pokemon Database</h1>
         
-        <a href="read">/View All Pokemon</a>
+        <a href="read">View All Pokemon</a>
     </body>
 </html>
