@@ -97,11 +97,15 @@ public class ReadQuery {
                 
                 table += "<td>";
                 table += pokemon.getStrengthRating();
-                table += "</td>" ;    
+                table += "</td>" ;   
+                
+                table += "<td>";
+                table += "<a href=delete?PokemonID=" + pokemon.getPokemonID() +"> Delete </a>";
+                table += "</td>";
                 
                 table += "</tr>";
                 
-                
+               
             }
         } catch (SQLException ex) {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
