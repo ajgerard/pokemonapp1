@@ -9,6 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
+import java.util.jar.Attributes.Name;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Pokemon;
@@ -66,7 +67,34 @@ public class ReadQuery {
      
         String table = "";
         
-        table += "<table border=1>";
+        table += "<table>";
+        
+        table += "<tr>";
+        table += "<th>";
+        table += "PokemonID";
+        table += "</th>";
+        
+        table += "<th>";
+        table += "Pokemon Name";
+        table += "</th>";
+        
+        table += "<th>";
+        table += "Type";
+        table += "</th>";
+        
+        table += "<th>";
+        table += "Location";
+        table += "</th>";
+        
+        table += "<th>";
+        table += "Strength Rating";
+        table += "</th>";
+        
+        table += "<th>";
+        table += "";
+        table += "</th>";
+        table += "</tr>";
+              
         
         try {
             while(this.results.next()){
