@@ -43,6 +43,7 @@ label {
 
 input, label {
     float:bottom;
+    padding: 10px;
     
 }
 
