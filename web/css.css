@@ -5,7 +5,6 @@ body {
 	color: Black;
 }
 
-tr{border: 2px solid black;}
 
 table{
    border: 2px solid black;
@@ -23,9 +22,7 @@ td {
 }
 
 th {
-    border: 2px solid black;
     background-color: #FFFF99;
-    border: 1px white;
     border-collapse: collapse;
     padding: 15px;
     text-align: center;
@@ -34,19 +31,10 @@ th {
 
 tr:hover td {background:#cccccc}
 
-label {
-    width:90px;
-    clear:left;
-    text-align:left;
-    padding-right:40px;
-}
+.right {text-align: right;}
+.add td {border:none; height: 25px; padding:10px; font-weight: bold;}
+.update td {border:none; height: 25px; padding:10px; font-weight: bold;}
 
-input, label {
-    float:bottom;
-    padding: 10px;
-    
-}
+a {color: #696969;}
 
-a {
-    color: #696969;
-}
+input[readonly] {background-color:gray;}

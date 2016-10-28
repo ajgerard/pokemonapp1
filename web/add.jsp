@@ -12,18 +12,27 @@
         
         <form name="addForm" action="addPokemon" method="get">
             
-            <label>Pokemon Name:</label>
-            <input type="text" name="name" value="" />
-            <br>
-            <label>Type:</label>
-            <input type="text" name="type" value="" />
-            <br>
-            <label>Location:</label>
-            <input type="text" name="location"  value="" />
-            <br>
-            <label>Strength Rating:</label>
-            <input type="text" name="strength" value="" />
-            <br>
+            <table class="add">
+                <tr>
+                    <td class="right">Pokemon Name:</td>
+                    <td><input type="text" name="name" value="" /></td>
+                </tr>
+                
+                <tr>
+                    <td class="right">Type:</td>
+                    <td><input type="text" name="type" value="" /></td>
+                </tr>
+            
+                <tr>
+                    <td class="right">Location:</td>
+                    <td><input type="text" name="location"  value="" /></td>
+                </tr>
+                
+                <tr>
+                    <td class="right">Strength Rating:</td>
+                    <td><input type="text" name="strength" value="" /></td>
+                </tr>
+            </table>
             <input type="submit" name="submit" value="Submit" />
         </form>
     </body>
