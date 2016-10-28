@@ -1,0 +1,32 @@
+
+.wrap{text-align: center;
+     width:90%;
+     margin: 0 auto;
+     border: 1px solid black;
+     margin-top: 25px;}
+
+.header{background-color: tan;
+        text-align: left;
+         padding: 25px;
+}
+
+.headerImg{float: left;
+           width: 200px;
+}
+
+.headertex{float: left;
+           width:105px;
+           padding-top: 50px;
+           padding-left: 25px;
+}
+
+.main{background-color: pink;
+      text-align: left;
+      padding: 25px; 
+}
+
+.footer{background-color: green;
+        text-align: left;
+        padding: 25px;
+}
+

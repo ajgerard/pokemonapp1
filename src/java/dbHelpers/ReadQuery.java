@@ -54,7 +54,7 @@ public class ReadQuery {
     public void doRead(){
     
         try {
-            String query = "Select * from StrongPokemon";
+            String query = "Select * from StrongPokemon ORDER BY PokemonID ASC";
             
             PreparedStatement ps = conn.prepareStatement(query);
             this.results = ps.executeQuery();

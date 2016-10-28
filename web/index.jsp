@@ -12,6 +12,6 @@
         
         <a href="read">View All Pokemon</a>
         <br><br>
-        <a hred="search.jsp">Search All Pokemon</a>
+        <a href="search.jsp">Search All Pokemon</a>
     </body>
 </html>
