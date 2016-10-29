@@ -1,3 +1,4 @@
+body{background-color: grey;}
 
 .wrap{text-align: center;
      width:90%;
@@ -5,28 +6,74 @@
      border: 1px solid black;
      margin-top: 25px;}
 
-.header{background-color: tan;
+.header{
         text-align: left;
          padding: 25px;
 }
 
 .headerImg{float: left;
-           width: 200px;
+           width: 900px;
 }
 
-.headertex{float: left;
-           width:105px;
+.headertext{float: left;
+           width:230px;
            padding-top: 50px;
-           padding-left: 25px;
+           padding-left: 80px;
+           text-align: center;
 }
 
-.main{background-color: pink;
+.main{
       text-align: left;
       padding: 25px; 
 }
 
-.footer{background-color: green;
-        text-align: left;
+.footer{
+        text-align: center;
         padding: 25px;
 }
 
+/* http://css.maxdesign.com.au/listamatic/horizontal24.html */
+
+
+/*Fat Erik's Pipelist*/
+
+.navcontainer{margin-left: 30px; text-align: left;}
+
+.navlist
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.navlist li
+{
+display: inline;
+padding: 0;
+margin: 0;
+}
+
+.navlist li:before { content: "| "; }
+.navlist li:first-child:before { content: ""; }
+
+/*IE workaround*/
+/*All IE browsers*/
+* html #navlist li
+{
+border-left: 1px solid black;
+padding: 0 0.4em 0 0.4em;
+margin: 0 0.4em 0 -0.4em;
+}
+
+/*Win IE browsers - hide from Mac IE\*/
+* html #navlist { height: 1%; }
+
+* html #navlist li
+{
+display: block;
+float: left;
+}
+
+/*End hide*/
+/*Mac IE 5*/
+* html #navlist li:first-child { border-left: 0; }

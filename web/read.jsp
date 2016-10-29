@@ -10,7 +10,16 @@
     
     <% String table = (String) request.getAttribute("table"); %>
     
-    <body>
+    <body>  
+        <div class="wrap">
+            
+            <%@ include file="include/header.jsp" %>
+            
+            <%@ include file="include/menu.jsp" %>
+            
+            <div class="main">
+                
+        
         <h1>Strong Pokemon</h1>
         <%= table %>
         
@@ -19,5 +28,11 @@
         <a href ="add"> Add A New Pokemon</a>
         <br><br>
         <a href="search.jsp">Search All Pokemon</a>
+        
+         </div>
+            
+        <%@ include file="include/footer.jsp" %>
+        
+        </div>
     </body>
 </html>
