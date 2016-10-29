@@ -1,5 +1,6 @@
 body{background-color: tan;}
 
+
 .wrap{text-align: center;
      width:90%;
      margin: 0 auto;
@@ -12,14 +13,14 @@ body{background-color: tan;}
 }
 
 .headerImg{float: left;
-           width: 900px;
+           width: 800px;
 }
 
 .headertext{float: left;
-           width:230px;
+           width:600px;
            padding-top: 50px;
            padding-left: 80px;
-           text-align: center;
+           text-align: left;
 }
 
 
