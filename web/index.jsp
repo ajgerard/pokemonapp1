@@ -9,23 +9,19 @@
     </head>
     <body>
         <div class="wrap">
-            
+
             <%@ include file="include/header.jsp" %>
-            
+
             <%@ include file="include/menu.jsp" %>
-            
+
             <div class="main">
-                
+
                 <h1>My Pokemon Database</h1>
-        
-                <a href="read">View All Pokemon</a>
-                <br><br>
-                <a href="search.jsp">Search All Pokemon</a>
-           
+
             </div>
-            
-        <%@ include file="include/footer.jsp" %>
-        
+
+            <%@ include file="include/footer.jsp" %>
+
         </div>
     </body>
 </html>

@@ -51,9 +51,9 @@ tr:hover td {background:#cccccc}
 
 .right {text-align: right;}
 .add td {border:none; height: 25px; padding:10px; font-weight: bold;}
-.update td {border:none; height: 25px; padding:10px; font-weight: bold;}
+.update td {color: #696969; border:none; height: 25px; padding:10px; font-weight: bold;}
 
-a {color: purple;}
+a {color: #696969;}
 
 input[readonly] {background-color:gray;}
 

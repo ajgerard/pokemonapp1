@@ -7,32 +7,28 @@
         <link rel="stylesheet" type="text/css" href="css.css" />
         <title>JSP Page</title>
     </head>
-    
-    <% String table = (String) request.getAttribute("table"); %>
-    
+
+    <% String table = (String) request.getAttribute("table");%>
+
     <body>  
         <div class="wrap">
-            
+
             <%@ include file="include/header.jsp" %>
-            
+
             <%@ include file="include/menu.jsp" %>
-            
+
             <div class="main">
-                
-        
-        <h1>Strong Pokemon</h1>
-        <%= table %>
-        
-        <br><br>
-        
-        <a href ="add"> Add A New Pokemon</a>
-        <br><br>
-        <a href="search.jsp">Search All Pokemon</a>
-        
-         </div>
-            
-        <%@ include file="include/footer.jsp" %>
-        
+
+
+                <h1>Strong Pokemon</h1>
+                <%= table%>
+
+                <br><br>
+
+            </div>
+
+            <%@ include file="include/footer.jsp" %>
+
         </div>
     </body>
 </html>
